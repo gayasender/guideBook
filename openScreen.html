@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" charset="UTF-8" dir="rtl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="openScreen.css">
+    <link rel="stylesheet" href="part1Screen.css">
+    <script src="openScreen.js"></script>
+    <script src="part1Screen.js"></script>
+    <title>לומדת תיק מדריך</title>
+</head>
+<body>
+    <img src="images/openScreen/openingBG.png" alt="openBg" id="openingBg">
+
+    <div id="page1">
+        <h1 class="free" id="open-title">ברוכים הבאים לתרגול של כתיבת תיק מדריך</h1>
+        <img src="images/openScreen/startBtn.png" alt="startBtn" id="startBtn" class="free" />
+        <h1 class="free" id="startBtnTitle">בואו נתחיל</h1>
+    </div>
+
+    <div id="page2">
+        <h1 class="item" id="part1-title">חלק ראשון - בנק מילים</h1>
+        <h1 class="item instruct-text" id="part1-instruct1">לפניכם הגדרות לבניית תיק מדריך ובנק מילים שמכיל את כותרות ההגדרות.</h1>
+        <h1 class="item instruct-text" id="part1-instruct2">הצמידו כל כותרת להגדרה שאותה היא מייצגת.</h1>
+        <h1 class="item instruct-text" id="part1-instruct3">בהצלחה!</h1>
+        <h1 class="item" id="btn-levels"><p id="btn-levels-text">בואו נתחיל</p></h1>
+    </div>
+
+    <div id="firstExer">
+        <div class="item" id="exerTable">
+            <div class="item space-ans" id="space1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="item space-ans" id="space2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="item space-ans" id="space3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="item space-ans" id="space4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="item space-ans" id="space5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+            <div class="item lines line1"></div>
+            <div class="item lines line2"></div>
+            <div class="item lines line3"></div>
+            <div class="item lines line4"></div>
+            <div class="item lines line5"></div>
+
+            <p class="item space-texts" id="space1-text">פעילות הדרכתית בעלת גבולות של תוכן (התחלה, אמצע וסוף), המתוחמת בזמן ומאורגנת להשגת מטרה/מטרות למידה מסוימות. יחידת לימוד יכולה להיות שיעור.</p>
+            <p class="item space-texts" id="space2-text">יחידת הלימוד הבסיסית והקטנה ביותר. עשויה להיות עיונית או מעשית, פרונטלית, מכוונת או משולבת.</p>
+            <p class="item space-texts" id="space3-text">מספר שיעורים עיוניים ו/או מעשיים באותו נושא שמובילים להשגת מטרת על משותפת.</p>
+            <p class="item space-texts" id="space4-text">תיק הכולל את התוכן המקצועי והפעולות ההדרכתיות המרכיבות שיעור פרונטלי או פעילות בעלת מרכיבים מעשיים (תרגיל מעשי, מבחן מעשי). </p>
+            <p class="item space-texts" id="space5-text">תהליך פיצוח התוכן וקביעת המטודולוגיה, הרצף, שיטות הלימוד המשולבות ביחידת הלימוד ותכולות ההדרכה הרלוונטיות (מצגת, לומדה, סרטון וכו').</p>
+        </div>
+
+        <div class="item" id="exerBank"></div>
+
+        <div class="item space-ans space-bank" id="spaceBank1" draggable="true" ondragstart="drag(event)">יחידת לימוד</div>
+        <div class="item space-ans space-bank" id="spaceBank2" draggable="true" ondragstart="drag(event)">שיעור</div>
+        <div class="item space-ans space-bank" id="spaceBank3" draggable="true" ondragstart="drag(event)">קובץ שיעורים</div>
+        <div class="item space-ans space-bank" id="spaceBank4" draggable="true" ondragstart="drag(event)">תיק מדריך</div>
+        <div class="item space-ans space-bank" id="spaceBank5" draggable="true" ondragstart="drag(event)">פיתוח הדרכתי</div>
+        <h1 class="item" id="btn-check"><p id="btn-check-text">בדיקה</p></h1>
+    </div>
+
+    <div class="item" id="page3">
+        <h1 class="item" id="part2-title">חלק שני - נכון/לא נכון </h1>
+        <h1 class="item instruct-text" id="part2-instruct1">לפניכם הגדרות לכתיבה ותיקוף תיק מדריך אשר חלק נכונות </h1>
+        <h1 class="item instruct-text" id="part2-instruct2">וחלקן לא.</h1>
+        <h1 class="item instruct-text" id="part2-instruct3">בחרו בהגדרה הנכונה.</h1>
+        <h1 class="item instruct-text" id="part2-instruct4">בהצלחה!</h1>
+        <h1 class="item" id="btn-part2-levels"><p id="btn-part2-text">בואו נתחיל</p></h1>
+    </div>
+
+    <div id="secondExer">
+        <div class="item ans1 ans-space-exer ans-text1-pressed" id="firstAnswerQuest1"><p id="firstAnsText1" class="ans1-text1">רצף של כמה שיעורים תחת אותו נושא או תת-פרק יקרא יחידת לימוד ולו מספר כמה תיקי מדריך.</p></div>
+        <div class="item ans2 ans-space-exer ans-text1-pressed" id="secondAnswerQuest1"><p id="secondAnsText1" class="ans2-text1">רצף של תדריכים, מצגות ונספחים יקרא יחידת לימוד ולו מספר תיקי מדריך.</p></div>
+
+        <div class="item ans1 ans-space-exer" id="firstAnswerQuest2"><p id="firstAnsText2" class="ans1-text2">על כל יחידת לימוד יהיה חתום קצין בדרגת רס"ן לכל הפחות.</p></div>
+        <div class="item ans2 ans-space-exer" id="secondAnswerQuest2"><p id="secondAnsText2" class="ans2-text2">על כל יחידת לימוד יהיה חתום קצין בדרגת סגן לכל הפחות.</p></div>
+
+        <div class="item ans1 ans-space-exer" id="firstAnswerQuest3" >
+            <p id="firstAnsText3-1" class="ans1-text3-1">
+                <p id="firstAnsText3-1" class="ans1-text3-1">כל תיק מדריך יאושר על ידי הגורמים הבאים:</p>
+                <p id="firstAnsText3-2" class="ans1-text3-2">1. אישור מקצועי ממפקדת החיל הרלוונטי</p>
+                <p id="firstAnsText3-3" class="ans1-text3-3">2. אישור הדרכתי מגורם מגוף פיתוח הגפ"ה</p>
+            </p>
+        </div>
+        <div class="item ans2 ans-space-exer" id="secondAnswerQuest3">
+            <p id="secondAnsText3" class="ans2-text3">
+                <p id="secondAnsText3-1" class="ans2-text3-1">כל תיק מדריך יאושר על ידי הגורמים הבאים:</p>
+                <p id="secondAnsText3-2" class="ans2-text3-2">1. אישור תורתי ממפקדת החיל הרלוונטי</p>
+                <p id="secondAnsText3-3" class="ans2-text3-3">2. אישור הדרכתי מגורם מגוף פיתוח ההדרכה הבה"די</p>
+            </p>
+        </div>
+
+        <div class="item ans1 ans-space-exer" id="firstAnswerQuest4"><p id="firstAnsText4" class="ans1-text4">תיק מדריך בחטיבה 460 מכונה מארז הדרכה</p></div>
+        <div class="item ans2 ans-space-exer" id="secondAnswerQuest4"><p id="secondAnsText4" class="ans2-text4">תיק מדריך בחטיבה 460 מכונה תיק תרגיל</p></div>
+    </div>
+
+    <div class="item" id="page4">
+        <h1 class="item" id="part3-title">חלק שלישי - משחק זכרון</h1>
+        <h1 class="item instruct-text" id="part3-instruct1">לפניכם הגדרות של פרקים שנכללים בתוך כל תיק מדריך.</h1>
+        <h1 class="item instruct-text" id="part3-instruct2">התאימו בין ההגדרות ופירושן.</h1>
+        <h1 class="item instruct-text" id="part3-instruct3">בהצלחה!</h1>
+        <h1 class="item" id="btn-part3-levels"><p id="btn-part3-text">בואו נתחיל</p></h1>
+    </div>
+
+    <div id="thirdExer">
+        <div class="container1">
+            <div id="card1" class="cards"><p id="card1-text" class="cards-text">?</p></div>
+            <div id="card2" class="cards"><p id="card2-text" class="cards-text">?</p></div>
+            <div id="card3" class="cards"><p id="card3-text" class="cards-text">?</p></div>
+            <div id="card4" class="cards"><p id="card4-text" class="cards-text">?</p></div>
+        </div>
+        <div class="container2">
+            <div id="card5" class="cards"><p id="card5-text" class="cards-text">?</p></div>
+            <div id="card6" class="cards"><p id="card6-text" class="cards-text">?</p></div>
+            <div id="card7" class="cards"><p id="card7-text" class="cards-text">?</p></div>
+            <div id="card8" class="cards"><p id="card8-text" class="cards-text">?</p></div>
+        </div>
+    </div>
+
+    <div class="item" id="lastPage">
+        <h1 class="item instruct4-text" id="part4-instruct1">כל הכבוד!</h1>
+        <h1 class="item instruct4-text" id="part4-instruct2">סיימתם את הלומדה בהצלחה</h1>
+        <h1 class="item instruct4-text" id="part4-instruct3">אין עליכם!</h1>
+
+        <img src="images/part3Screen/lightOff.png" alt="lightOff" id="light" class="item light" />
+
+        <!-- <img src="images/part3Screen/lightOff.png" alt="lightOff" id="lightOff" class="item light" /> -->
+
+
+        <img src="images/part3Screen/hidePart.png" alt="hidePart" id="hidePart" class="item hide-part">
+
+
+
+        <div id="hide-part2"></div>
+
+        <h1 class="item instruct5-text" id="part4-instruct4">מפתחת: רב"ט גאיה סנדר,      מומחית תוכן: סג"מ אביה מנס</h1>
+
+    </div>
+</body>
+</html>

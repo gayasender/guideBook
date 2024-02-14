@@ -1,0 +1,1541 @@
+html {
+    user-select: none;
+}
+
+body {
+    /* position: fixed; */
+    width: 100vw;
+    height: 100vh;
+}
+
+.fade-in {
+    animation: FadeIn 1s;
+    opacity: 1;
+    display: block;
+}
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-out {
+    animation: FadeOut .5s;
+    opacity: 0;
+}
+
+@keyframes FadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.title-go-up {
+    animation: titleGoUp 2s;
+}
+
+@keyframes titleGoUp {
+    0% {
+        bottom: 60vh;
+    }
+    100% {
+        bottom: 80vh;
+    }
+}
+
+#page2 {
+    opacity: 0;
+    display: none;
+}
+
+.item {
+    position: absolute;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#openingBg {
+    height: 98.5vh;
+    width: 99vw;
+}
+
+#part1-title {
+    bottom: 60vh;
+    font-size: 9vmin;
+    width: 60vw;
+    text-align: center;
+    right: 20vw;
+}
+
+.instruct-text {
+    font-size: 3.5vmin;
+    width: 50vw;
+    text-align: center;
+    right: 25.5vw;
+}
+
+#part1-instruct1 {
+    bottom: 50vh;
+}
+
+#part1-instruct2 {
+    bottom: 45.5vh;
+}
+
+#part1-instruct3 {
+    bottom: 41vh;
+}
+
+#btn-levels {
+    display: flex;
+    background-color: rgb(240, 239, 232);
+    align-items: center;
+    width: 10vw;
+    height: 7vh;
+    bottom: 26vh;
+    right: 45vw;
+    color: rgb(244, 146, 188);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    cursor: pointer;
+    border-radius: 13px;
+    border: #000 solid 2px;
+}
+
+#btn-levels-text {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    right: 1.2vw;
+    font-size: 2.8vmin;
+}
+
+#exerTable {
+    width: 85vw;
+    height: 68vh;
+    background-color: rgb(255, 255, 255);
+    top: 15vh;
+    right: 7.5vw;
+    border-radius: 90px;
+    border: #000 solid 3.5px;
+}
+
+.space-ans {
+    width: 12vw;
+    height: 4.5vh;
+    background-color: rgb(250, 216, 127);
+    right: 3vw;
+    border-radius: 20px;
+    border: #000 solid 3.5px;
+}
+
+#space1 {
+    top: 6vh;
+}
+
+#space2 {
+    top: 18vh;
+}
+
+#space3 {
+    top: 30vh;
+}
+
+#space4 {
+    top: 42vh;
+}
+
+#space5 {
+    top: 54vh;
+}
+
+.space-texts {
+    font-size: 3vmin;
+    width: 62vw;
+    text-align: right;
+    right: 19vw;
+}
+
+#space1-text {
+    top: 3vh;
+}
+
+#space2-text {
+    top: 15vh;
+}
+
+#space3-text {
+    top: 28vh;
+}
+
+#space4-text {
+    top: 39vh;
+}
+
+#space5-text {
+    top: 51vh;
+}
+
+.lines {
+    width: 1.2vw;
+    height: .2vh;
+    background-color: black;
+    right: 16.5vw;
+}
+
+.line1 {
+    top: 8vh;
+}
+
+.line2 {
+    top: 20vh;
+}
+
+.line3 {
+    top: 32.7vh;
+}
+
+.line4 {
+    top: 44vh;
+}
+
+.line5 {
+    top: 56vh;
+}
+
+#exerBank {
+    width: 85vw;
+    height: 8vh;
+    background-color: rgb(255, 255, 255);
+    top: 86vh;
+    right: 7.5vw;
+    border-radius: 30px;
+    border: #000 solid 3.5px;
+}
+
+.space-bank {
+    font-size: 3vmin;
+    text-align: center;
+    top: 87.8vh;
+    font-weight: bold;
+    z-index: 30;
+    cursor: pointer;
+}
+
+#spaceBank1 {
+    right: 25vw;
+}
+
+#spaceBank2 {
+    right: 10vw;
+}
+
+#spaceBank3 {
+    right: 70vw;
+}
+
+#spaceBank4 {
+    right: 55vw;
+}
+
+#spaceBank5 {
+    right: 40vw;
+}
+
+.space-bank1-goback {
+    animation: spaceBank1goBack 2s;
+}
+
+@keyframes spaceBank1goBack {
+    0% {
+        top: 21.4vh;
+        right: 10.7vw;
+    }
+    100% {
+        top: 87.8vh;
+        right: 25vw;
+    }
+}
+
+.space-bank2-goback {
+    animation: spaceBank2goBack 2s;
+}
+
+@keyframes spaceBank2goBack {
+    0% {
+        top: 33.3vh;
+        right: 10.7vw;
+    }
+    100% {
+        top: 87.8vh;
+        right: 10vw;
+    }
+}
+
+.space-bank3-goback {
+    animation: spaceBank3goBack 2s;
+}
+
+@keyframes spaceBank3goBack {
+    0% {
+        top: 45.3vh;
+        right: 10.7vw;
+    }
+    100% {
+        top: 87.8vh;
+        right: 70vw;
+    }
+}
+
+.space-bank4-goback {
+    animation: spaceBank4goBack 2s;
+}
+
+@keyframes spaceBank4goBack {
+    0% {
+        top: 57.4vh;
+        right: 10.7vw;
+    }
+    100% {
+        top: 87.8vh;
+        right: 55vw;
+    }
+}
+
+.space-bank5-goback {
+    animation: spaceBank5goBack 2s;
+}
+
+@keyframes spaceBank5goBack {
+    0% {
+        top: 69.4vh;
+        right: 10.7vw;
+    }
+    100% {
+        top: 87.8vh;
+        right: 40vw;
+    }
+}
+
+#btn-check {
+    display: flex;
+    background-color: rgb(240, 239, 232);
+    align-items: center;
+    width: 7vw;
+    height: 6vh;
+    top: 84.8vh;
+    right: 84vw;
+    color: rgb(244, 146, 188);
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    cursor: pointer;
+    border-radius: 20px;
+    border: #000 solid 3px;
+}
+
+#btn-check-text {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    right: 1.2vw;
+    font-size: 2.8vmin;
+}
+
+#firstExer {
+    display: none;
+    opacity: 0;
+}
+
+.move-title-to-part2 {
+    animation: slideTitleToPart2 3s;
+}
+
+@keyframes slideTitleToPart2 {
+    0% {
+        bottom: 80vh;
+        right: 20vw;
+    }
+    100% {
+        bottom: 80vh;
+        right: 120vw;
+    }
+}
+
+.move-questspace-to-part2 {
+    animation: slideQuestSpaceToPart2 3s;
+}
+
+@keyframes slideQuestSpaceToPart2 {
+    0% {
+        top: 15vh;
+        right: 7.5vw;
+    }
+    100% {
+        top: 15vh;
+        right: 120vw;
+    }
+}
+
+.move-bankspace-to-part2 {
+    animation: slideBankSpaceToPart2 3s;
+}
+
+@keyframes slideBankSpaceToPart2 {
+    0% {
+        top: 86vh;
+        right: 7.5vw;
+    }
+    100% {
+        top: 86vh;
+        right: 122vw;
+    }
+}
+
+.move-bankspace1-to-part2 {
+    animation: slideBankSpace1ToPart2 3s;
+}
+
+@keyframes slideBankSpace1ToPart2 {
+    0% {
+        top: 21.4vh;
+        right: 10.7vw;
+    }
+    100% {
+        top: 21.4vh;
+        right: 123vw;
+    }
+}
+
+.move-bankspace2-to-part2 {
+    animation: slideBankSpace2ToPart2 3s;
+}
+
+@keyframes slideBankSpace2ToPart2 {
+    0% {
+        top: 33.3vh;
+        right: 10.7vw;
+    }
+    100% {
+        top: 33.3vh;
+        right: 123vw;
+    }
+}
+
+.move-bankspace3-to-part2 {
+    animation: slideBankSpace3ToPart2 3s;
+}
+
+@keyframes slideBankSpace3ToPart2 {
+    0% {
+        top: 45.3vh;
+        right: 10.7vw;
+    }
+    100% {
+        top: 45.3vh;
+        right: 123vw;
+    }
+}
+
+.move-bankspace4-to-part2 {
+    animation: slideBankSpace4ToPart2 3s;
+}
+
+@keyframes slideBankSpace4ToPart2 {
+    0% {
+        top: 57.4vh;
+        right: 10.7vw;
+    }
+    100% {
+        top: 57.4vh;
+        right: 123vw;
+    }
+}
+
+.move-bankspace5-to-part2 {
+    animation: slideBankSpace5ToPart2 3s;
+}
+
+@keyframes slideBankSpace5ToPart2 {
+    0% {
+        top: 69.4vh;
+        right: 10.7vw;
+    }
+    100% {
+        top: 69.4vh;
+        right: 123vw;
+    }
+}
+
+.move-btncheck-to-part2 {
+    animation: slideBtnCheckToPart2 3s;
+}
+
+@keyframes slideBtnCheckToPart2 {
+    0% {
+        top: 84.8vh;
+        right: 84vw;
+    }
+    100% {
+        top: 84.8vh;
+        right: 130vw;
+    }
+}
+
+#part2-title {
+    bottom: 60vh;
+    font-size: 9vmin;
+    width: 60vw;
+    text-align: center;
+    right: 20vw;
+}
+
+.move-title-up-end {
+    animation: moveTitleUpEnd 2s;
+}
+
+@keyframes moveTitleUpEnd {
+    0% {
+        bottom: 80vh;
+    }
+    100% {
+        bottom: 110vh;
+    }
+}
+
+
+#btn-part2-levels {
+    display: flex;
+    background-color: rgb(240, 239, 232);
+    align-items: center;
+    width: 10vw;
+    height: 7vh;
+    bottom: 25vh;
+    right: 45vw;
+    color: rgb(244, 146, 188);
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    cursor: pointer;
+    border-radius: 20px;
+    border: #000 solid 3px;
+}
+
+#btn-part2-text {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    right: 1.2vw;
+    font-size: 2.8vmin;
+}
+
+#part2-instruct1 {
+    bottom: 53vh;
+    width: 55vw;
+    right: 20.5vw;
+}
+
+#part2-instruct2 {
+    bottom: 48.5vh;
+}
+
+#part2-instruct3 {
+    bottom: 44vh;
+}
+
+#part2-instruct4 {
+    bottom: 39vh;
+}
+
+#page3 {
+    bottom: -5vh;
+    right: -80vw;
+}
+
+.move-part3 {
+    animation: slideToPart3 3s;
+}
+
+@keyframes slideToPart3 {
+    0% {
+        bottom: -5vh;
+        right: -80vw;
+    }
+    100% {
+        bottom: -5vh;
+        right: -1vw;
+    }
+}
+
+.ans-space-exer {
+    background-color: rgb(240, 239, 232);
+    border-radius: 80px;
+    border: rgb(102, 97, 83) solid 4px;
+    cursor: pointer;
+}
+
+.ans1-text1 {
+    font-size: 4.2vmin;
+    width: 25vw;
+    text-align: center;
+    font-weight: 800;
+    margin-top: 15vh;
+    margin-right: 2.5vw;
+}
+
+.ans2-text1 {
+    font-size: 4.2vmin;
+    width: 25vw;
+    text-align: center;
+    font-weight: 800;
+    margin-top: 15vh;
+    margin-right: 2.5vw;
+}
+
+.ans-text1-pressed:hover .ans1-text1{
+    animation: presstAnsText1 1s;
+    font-size: 3.6vmin;
+    width: 20vw;
+    margin-top: 13vh;
+}
+
+.ans-text1-pressed:not(:hover) .ans1-text1{
+    animation: unpressAnsText1 1s;
+    font-size: 4.2vmin;
+    width: 25vw;
+    margin-top: 15vh;
+}
+
+.ans-text1-pressed:hover .ans2-text1{
+    animation: presstAnsText1 1s;
+    font-size: 3.6vmin;
+    width: 20vw;
+    margin-top: 13vh;
+}
+
+.ans-text1-pressed:not(:hover) .ans2-text1{
+    animation: unpressAnsText1 1s;
+    font-size: 4.2vmin;
+    width: 25vw;
+    margin-top: 15vh;
+}
+
+@keyframes presstAnsText1 {
+    0% {
+        font-size: 4.2vmin;
+        width: 25vw;
+        margin-top: 15vh;
+    }
+    100% {
+        font-size: 3.6vmin;
+        width: 20vw;
+        margin-top: 13vh;
+    }
+}
+
+@keyframes unpressAnsText1 {
+    0% {
+        font-size: 3.6vmin;
+        width: 20vw;
+        margin-top: 13vh;
+    }
+    100% {
+        font-size: 4.2vmin;
+        width: 25vw;
+        margin-top: 15vh;
+    }
+}
+
+.ans1-text2 {
+    font-size: 4.2vmin;
+    width: 25vw;
+    text-align: center;
+    font-weight: 800;
+    margin-top: 20vh;
+    margin-right: 2.5vw;
+}
+
+.ans2-text2 {
+    font-size: 4.2vmin;
+    width: 25vw;
+    text-align: center;
+    font-weight: 800;
+    margin-top: 20vh;
+    margin-right: 2.5vw;
+}
+
+.ans-text2-pressed:hover .ans1-text2{
+    animation: presstAnsText2 1s;
+    font-size: 3.6vmin;
+    width: 20vw;
+    margin-top: 18vh;
+}
+
+.ans-text2-pressed:not(:hover) .ans1-text2{
+    animation: unpressAnsText2 1s;
+    font-size: 4.2vmin;
+    width: 25vw;
+    margin-top: 20vh;
+}
+
+.ans-text2-pressed:hover .ans2-text2{
+    animation: presstAnsText2 1s;
+    font-size: 3.6vmin;
+    width: 20vw;
+    margin-top: 18vh;
+}
+
+.ans-text2-pressed:not(:hover) .ans2-text2{
+    animation: unpressAnsText2 1s;
+    font-size: 4.2vmin;
+    width: 25vw;
+    margin-top: 20vh;
+}
+
+@keyframes presstAnsText2 {
+    0% {
+        font-size: 4.2vmin;
+        width: 25vw;
+        margin-top: 20vh;
+    }
+    100% {
+        font-size: 3.6vmin;
+        width: 20vw;
+        margin-top: 18vh;
+    }
+}
+
+@keyframes unpressAnsText2 {
+    0% {
+        font-size: 3.6vmin;
+        width: 20vw;
+        margin-top: 18vh;
+    }
+    100% {
+        font-size: 4.2vmin;
+        width: 25vw;
+        margin-top: 20vh;
+    }
+}
+
+.ans1-text3-1 {
+    font-size: 3.6vmin;
+    width: 25vw;
+    text-align: center;
+    font-weight: 800;
+    margin-top: 12vh;
+    margin-right: 2.5vw;
+}
+
+.ans2-text3-1 {
+    font-size: 3.6vmin;
+    width: 25vw;
+    text-align: center;
+    font-weight: 800;
+    margin-top: 12vh;
+    margin-right: 2.5vw;
+}
+
+.ans-text3-1-pressed:hover .ans1-text3-1{
+    animation: presstAnsText3-1 1s;
+    font-size: 3vmin;
+    width: 22vw;
+    margin-top: 10vh;
+    margin-right: 1.5vw;
+}
+
+.ans-text3-1-pressed:not(:hover) .ans1-text3-1{
+    animation: unpressAnsText3-1 1s;
+    font-size: 3.6vmin;
+    width: 25vw;
+    margin-top: 12vh;
+    margin-right: 2.5vw;
+}
+
+.ans-text3-1-pressed:hover .ans2-text3-1{
+    animation: presstAnsText3-1 1s;
+    font-size: 3vmin;
+    width: 22vw;
+    margin-top: 10vh;
+    margin-right: 1.5vw;
+}
+
+.ans-text3-1-pressed:not(:hover) .ans2-text3-1{
+    animation: unpressAnsText3-1 1s;
+    font-size: 3.6vmin;
+    width: 25vw;
+    margin-top: 12vh;
+    margin-right: 2.5vw;
+}
+
+@keyframes presstAnsText3-1 {
+    0% {
+        font-size: 3.6vmin;
+        width: 25vw;
+        margin-top: 12vh;
+        margin-right: 2.5vw;
+        
+    }
+    100% {
+        font-size: 3vmin;
+        width: 22vw;
+        margin-top: 10vh;
+        margin-right: 1.5vw;
+    }
+}
+
+@keyframes unpressAnsText3-1 {
+    0% {
+        font-size: 3vmin;
+        width: 22vw;
+        margin-top: 10vh;
+        margin-right: 1.5vw;
+    }
+    100% {
+        font-size: 3.6vmin;
+        width: 25vw;
+        margin-top: 12vh;
+        margin-right: 2.5vw;
+    }
+}
+
+.ans1-text3-2 {
+    font-size: 3.6vmin;
+    width: 25vw;
+    text-align: center;
+    font-weight: 800;
+    margin-right: 2.5vw;
+}
+
+.ans2-text3-2 {
+    font-size: 3.6vmin;
+    width: 25vw;
+    text-align: center;
+    font-weight: 800;
+    margin-right: 2.5vw;
+}
+
+.ans1-text3-3 {
+    font-size: 3.6vmin;
+    width: 25vw;
+    text-align: center;
+    font-weight: 800;
+    margin-right: 2.5vw;
+}
+
+.ans2-text3-3 {
+    font-size: 3.6vmin;
+    width: 25vw;
+    text-align: center;
+    font-weight: 800;
+    margin-right: 2.5vw;
+}
+
+.ans-text3-2-pressed:hover .ans1-text3-2{
+    animation: presstAnsText3-2 1s;
+    font-size: 3vmin;
+    width: 20vw;
+}
+
+.ans-text3-2-pressed:not(:hover) .ans1-text3-2{
+    animation: unpressAnsText3-2 1s;
+    font-size: 3.6vmin;
+    width: 25vw;
+}
+
+.ans-text3-2-pressed:hover .ans2-text3-2{
+    animation: presstAnsText3-2 1s;
+    font-size: 3vmin;
+    width: 20vw;
+}
+
+.ans-text3-2-pressed:not(:hover) .ans2-text3-2{
+    animation: unpressAnsText3-2 1s;
+    font-size: 3.6vmin;
+    width: 25vw;
+}
+
+.ans-text3-2-pressed:hover .ans1-text3-3{
+    animation: presstAnsText3-2 1s;
+    font-size: 3vmin;
+    width: 20vw;
+}
+
+.ans-text3-2-pressed:not(:hover) .ans1-text3-3{
+    animation: unpressAnsText3-2 1s;
+    font-size: 3.6vmin;
+    width: 25vw;
+}
+
+.ans-text3-2-pressed:hover .ans2-text3-3{
+    animation: presstAnsText3-2 1s;
+    font-size: 3vmin;
+    width: 20vw;
+}
+
+.ans-text3-2-pressed:not(:hover) .ans2-text3-3{
+    animation: unpressAnsText3-2 1s;
+    font-size: 3.6vmin;
+    width: 25vw;
+}
+
+@keyframes presstAnsText3-2 {
+    0% {
+        font-size: 3.6vmin;
+        width: 25vw;
+    }
+    100% {
+        font-size: 3vmin;
+        width: 20vw;
+    }
+}
+
+@keyframes unpressAnsText3-2 {
+    0% {
+        font-size: 3vmin;
+        width: 20vw;
+    }
+    100% {
+        font-size: 3.6vmin;
+        width: 25vw;
+    }
+}
+
+.ans1-text4 {
+    font-size: 4.6vmin;
+    width: 25vw;
+    text-align: center;
+    font-weight: 800;
+    margin-top: 20vh;
+    margin-right: 2.5vw;
+}
+
+.ans2-text4 {
+    font-size: 4.6vmin;
+    width: 25vw;
+    text-align: center;
+    font-weight: 800;
+    margin-top: 20vh;
+    margin-right: 2.5vw;
+}
+
+.ans-text4-pressed:hover .ans1-text4{
+    animation: presstAnsText4 1s;
+    font-size: 4vmin;
+    width: 20vw;
+    margin-top: 18vh;
+}
+
+.ans-text4-pressed:not(:hover) .ans1-text4{
+    animation: unpressAnsText4 1s;
+    font-size: 4.6vmin;
+    width: 25vw;
+    margin-top: 20vh;
+}
+
+.ans-text4-pressed:hover .ans2-text4{
+    animation: presstAnsText4 1s;
+    font-size: 4vmin;
+    width: 20vw;
+    margin-top: 18vh;
+}
+
+.ans-text4-pressed:not(:hover) .ans2-text4{
+    animation: unpressAnsText4 1s;
+    font-size: 4.6vmin;
+    width: 25vw;
+    margin-top: 20vh;
+}
+
+@keyframes presstAnsText4 {
+    0% {
+        font-size: 4.6vmin;
+        width: 25vw;
+        margin-top: 20vh;
+    }
+    100% {
+        font-size: 4vmin;
+        width: 20vw;
+        margin-top: 18vh;
+    }
+}
+
+@keyframes unpressAnsText4 {
+    0% {
+        font-size: 4vmin;
+        width: 20vw;
+        margin-top: 18vh;
+    }
+    100% {
+        font-size: 4.6vmin;
+        width: 25vw;
+        margin-top: 20vh;
+    }
+}
+
+.ans1 {
+    right: 15vw;
+    top: 25vh;
+    width: 30vw;
+    height: 60vh;
+    opacity: 0;
+    display: none;
+}
+
+.ans2 {
+    right: 55vw;
+    top: 25vh;
+    width: 30vw;
+    height: 60vh;
+    opacity: 0;
+    display: none;
+}
+
+.ans1-pressed:hover {
+    animation: pressFirstAns 1s;
+    right: 17vw;
+    top: 28vh;
+    width: 25vw;
+    height: 50vh;
+}
+
+.ans1-pressed:hover .ans1-text {
+    animation: presstAnsText 1s;
+    font-size: 3vmin;
+    width: 20vw;
+    top: 12vh;
+}
+
+.ans1-pressed:not(:hover) {
+    animation: unpressFirstAns 1s;
+    right: 15vw;
+    top: 25vh;
+    width: 30vw;
+    height: 60vh;
+}
+
+.ans1-pressed:not(:hover) .ans1-text {
+    animation: unpressAnsText 1s;
+    font-size: 3.6vmin;
+    width: 25vw;
+    top: 10vh;
+}
+
+@keyframes pressFirstAns {
+    0% {
+        width: 30vw;
+        height: 60vh;
+        right: 15vw;
+        top: 25vh;
+    }
+    100% {
+        width: 25vw;
+        height: 50vh;
+        right: 17vw;
+        top: 28vh;
+    }
+}
+
+@keyframes unpressFirstAns {
+    0% {
+        width: 25vw;
+        height: 50vh;
+        right: 17vw;
+        top: 28vh;
+    }
+    100% {
+        width: 30vw;
+        height: 60vh;
+        right: 15vw;
+        top: 25vh;
+    }
+}
+
+.ans2-pressed:hover {
+    animation: pressSecondAns 1s;
+    width: 25vw;
+    height: 50vh;
+    right: 57vw;
+    top: 28vh;
+}
+
+.ans2-pressed:hover .ans2-text {
+    animation: presstAnsText 1s;
+    font-size: 3vmin;
+    width: 20vw;
+    top: 12vh;
+}
+
+
+.ans2-pressed:not(:hover) {
+    animation: unpressSecondAns 1s;
+    width: 30vw;
+    height: 60vh;
+    right: 55vw;
+    top: 25vh;
+}
+
+.ans2-pressed:not(:hover) .ans2-text{
+    animation: unpressAnsText 1s;
+    font-size: 3.6vmin;
+    width: 25vw;
+    top: 10vh;
+}
+
+@keyframes pressSecondAns {
+    0% {
+        width: 30vw;
+        height: 60vh;
+        right: 55vw;
+        top: 25vh;
+    }
+    100% {
+        width: 25vw;
+        height: 50vh;
+        right: 57vw;
+        top: 28vh;
+    }
+}
+
+@keyframes unpressSecondAns {
+    0% {
+        width: 25vw;
+        height: 50vh;
+        right: 57vw;
+        top: 28vh;
+    }
+    100% {
+        width: 30vw;
+        height: 60vh;
+        right: 55vw;
+        top: 25vh;
+    }
+}
+
+.center-first-ans {
+    animation: centerFirstAns 3s;
+}
+
+@keyframes centerFirstAns {
+    0% {
+        right: 15vw;
+    }
+    100% {
+        right: 35vw;
+    }
+}
+
+.uncenter-first-ans {
+    animation: uncenterFirstAns 3s;
+}
+
+@keyframes uncenterFirstAns {
+    0% {
+        right: 35vw;
+    }
+    100% {
+        right: 15vw;
+    }
+}
+
+.center-second-ans {
+    animation: centerSecondAns 3s;
+}
+
+@keyframes centerSecondAns {
+    0% {
+        right: 55vw;
+    }
+    100% {
+        right: 35vw;
+    }
+}
+
+.uncenter-second-ans {
+    animation: uncenterSecondAns 3s;
+}
+
+@keyframes uncenterSecondAns {
+    0% {
+        right: 35vw;
+    }
+    100% {
+        right: 55vw;
+    }
+}
+
+.false-ans-out {
+    animation: falseAnsOut 3s;
+}
+
+@keyframes falseAnsOut {
+    0% {
+        top: 25vh;
+        opacity: 1;
+    }
+    100% {
+        top: 35vh;
+        opacity: 0;
+    }
+}
+
+.false-ans-in {
+    animation: falseAnsIn 3s;
+}
+
+@keyframes falseAnsIn {
+    0% {
+        top: 35vh;
+        opacity: 0;
+    }
+    100% {
+        top: 25vh;
+        opacity: 1;
+    }
+}
+
+
+#page4 {
+    bottom: -80vh;
+}
+
+.page4-goin {
+    animation: page4GoIn 2s;
+}
+
+@keyframes page4GoIn {
+    0% {
+        bottom: -80vh;
+    }
+    100% {
+        bottom: -5vh;
+    }
+}
+
+.page4-goout {
+    animation: page4GoOut 1s;
+}
+
+@keyframes page4GoOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.page4-title-goup {
+    animation: page4TitleGoUp 2s;
+}
+
+@keyframes page4TitleGoUp {
+    0% {
+        bottom: 60vh;
+    }
+    100% {
+        bottom: 85vh;
+    }
+}
+
+#part3-title {
+    bottom: 60vh;
+    font-size: 9vmin;
+    width: 60vw;
+    text-align: center;
+    right: 20vw;
+}
+
+#part3-instruct1 {
+    bottom: 53vh;
+    width: 55vw;
+    right: 20.5vw;
+}
+
+#part3-instruct2 {
+    bottom: 48.5vh;
+}
+
+#part3-instruct3 {
+    bottom: 44vh;
+}
+
+#part3-instruct4 {
+    bottom: 39vh;
+}
+
+#btn-part3-levels {
+    display: flex;
+    background-color: rgb(240, 239, 232);
+    align-items: center;
+    width: 10vw;
+    height: 7vh;
+    bottom: 33vh;
+    right: 45vw;
+    color: rgb(244, 146, 188);
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    cursor: pointer;
+    border-radius: 20px;
+    border: #000 solid 3px;
+}
+
+#btn-part3-text {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    right: 1.2vw;
+    font-size: 2.8vmin;
+}
+
+#thirdExer {
+    position: absolute;
+    top: 80vh;
+}
+
+@keyframes showThirdExer {
+    0% {
+        top: 80vh;
+    }
+    100% {
+        top: 0vh;
+    }
+}
+
+.container1 {
+    position: absolute;
+    width: 80vw;
+    height: 35vh;
+    /* background-color: red; */
+    top: 20vh;
+    right: 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container2 {
+    position: absolute;
+    width: 80vw;
+    height: 35vh;
+    /* background-color: red; */
+    top: 60vh;
+    right: 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cards {
+    width: 15vw;
+    height: 35vh;
+    background-color: rgb(240, 239, 232);
+    border-radius: 40px;
+    border: black solid 3px;
+    cursor: pointer;
+}
+
+.cards-text {
+    font-size: 18vmin;
+    text-align: center;
+    position: relative;
+    bottom: 12vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hide-text {
+    animation: hideText 1s;
+    opacity: 0;
+}
+
+@keyframes hideText {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.show-text {
+    animation: showText 1s;
+    opacity: 1;
+}
+
+@keyframes showText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.card1-text {
+    font-size: 6vmin;
+    text-align: center;
+    position: relative;
+    top: 6.5vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card2-text {
+    font-size: 4vmin;
+    text-align: center;
+    position: relative;
+    top: 3vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card3-text {
+    width: 14vw;
+    right: .5vw;
+    font-size: 3.8vmin;
+    text-align: center;
+    position: relative;
+    top: 3.5vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card4-text {
+    font-size: 4vmin;
+    text-align: center;
+    position: relative;
+    top: 8vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card5-text {
+    font-size: 4vmin;
+    text-align: center;
+    position: relative;
+    top: 8vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card6-text {
+    font-size: 4.2vmin;
+    text-align: center;
+    position: relative;
+    top: 2.5vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card7-text {
+    font-size: 3.5vmin;
+    text-align: center;
+    position: relative;
+    top: -1vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card8-text {
+    font-size: 4.2vmin;
+    text-align: center;
+    position: relative;
+    top: 7vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#lastPage {
+    opacity: 0;
+    display: none;
+}
+
+.instruct4-text {
+    font-size: 10vmin;
+    width: 80vw;
+    text-align: center;
+}
+
+.instruct5-text {
+    font-size: 3vmin;
+    width: 50vw;
+    text-align: center;
+    right: 25.5vw;
+    bottom: 6vh;
+    right: -50vw;
+    z-index: 5;
+}
+
+#part4-instruct1 {
+    bottom: 50vh;
+    width: 55vw;
+    right: 23.5vw;
+}
+
+#part4-instruct2 {
+    bottom: 38vh;
+    right: 10.5vw;
+}
+
+#part4-instruct3 {
+    bottom: 26vh;
+    right: 23.5vw;
+    width: 55vw;
+}
+
+.light {
+    width: 4vw;
+    height: 8vh;
+    bottom: 6vh;
+    right: 7vw;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.light:hover{
+    content: url("images/part3Screen/lightOn.png");
+}
+
+.light:not(:hover){
+    content: url("images/part3Screen/lightOff.png");
+}
+
+/* .light:hover + .instruct5-text{
+    animation: showFinaleText 1s;
+    right: 8vw;
+}
+
+
+.light:not(:hover) + .instruct5-text{
+    animation: hideFinaleText 1s;
+    right: -50vw;
+} */
+
+@keyframes showFinaleText {
+    0% {
+        right: -50vw;
+    }
+    100% {
+        right: 8vw;
+    }
+}
+
+@keyframes hideFinaleText {
+    0% {
+        right: 8vw;
+    }
+    100% {
+        right: -50vw;
+    }
+}
+
+.hide-part {
+    width: 11.2vw;
+    height: 14vh;
+    bottom: 0.4vh;
+    right: 0vw;
+    /* border: black solid 4px; */
+    z-index: 10;
+}
+
+#hide-part2 {
+    position: absolute;
+    width: 1vw;
+    height: 14vh;
+    background-color: white;
+    bottom: .5vh;
+    right: -1vw;
+    z-index: 10;
+}

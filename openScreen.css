@@ -1,0 +1,169 @@
+html {
+    user-select: none;
+}
+
+body {
+    /* position: fixed; */
+}
+
+.free {
+    position: absolute;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+    /* display: none; */
+}
+
+#openingBg {
+    height: 98.5vh;
+    width: 99vw;
+}
+
+#open-title {
+    bottom: 40vh;
+    font-size: 9vmin;
+    width: 60vw;
+    text-align: center;
+    right: 20vw;
+}
+
+.floating-btn {
+    animation: onBtn 2s infinite;
+}
+
+@keyframes onBtn {
+    0% {
+        width: 16vw;
+    }
+    50% {
+        width: 20vw;
+        right: 38vw;
+        bottom: 13vh;
+    }
+    100% {
+        width: 16vw;
+        right: 40vw;
+        bottom: 15vh;
+    }
+}
+
+.floating-smaller-btn {
+    animation: floatingSmallerBtn 2s infinite;
+}
+
+@keyframes floatingSmallerBtn {
+    0% {
+        width: 12vw;
+        right: 42vw;
+        bottom: 10vh;    
+    }
+    50% {
+        width: 14vw;
+        right: 41vw;
+        bottom: 8vh;
+    }
+    100% {
+        width: 12vw;
+        right: 42vw;
+        bottom: 10vh;  
+    }
+}
+
+.text-fade-out {
+    animation: textFadeOut 1s;
+    opacity: 0;
+}
+
+@keyframes textFadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.text-fade-in {
+    animation: textFadeIn 1s;
+    opacity: 1;
+}
+
+@keyframes textFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.textbtn-fade-out {
+    animation: textbtnFadeOut 1s;
+    opacity: 0;
+}
+
+@keyframes textbtnFadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        bottom: 15vh;
+        font-size: 3vmin;
+    }
+}
+
+.move-btn {
+    animation: moveBtn 1s;
+    width: 12vw;
+    right: 42vw;
+    bottom: 10vh;
+}
+
+@keyframes moveBtn {
+    0% {
+        width: 16vw;
+    }
+    100% {
+        width: 12vw;
+        right: 42vw;
+        bottom: 10vh;
+    }
+}
+
+#startBtn {
+    bottom: 15vh;
+    right: 40vw;
+    cursor: pointer;
+    width: 16vw;
+    z-index: 1;
+}
+
+#startBtnTitle:hover #startBtn {
+    animation: onBtn 2s infinite;
+}
+
+#startBtnTitle {
+    bottom: 22vh;
+    font-size: 4.5vmin;
+    width: 60vw;
+    text-align: center;
+    right: 18.5vw;
+    color: rgb(244, 146, 188);
+    text-shadow: -1.2px -1.2px 0 #000, 1.2px -1.2px 0 #000, -1.2px 1.2px 0 #000, 1.2px 1.2px 0 #000;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.page2-text-fadein {
+    animation: textFadeInPage2 1s;
+    opacity: 1;
+}
+
+@keyframes textFadeInPage2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
